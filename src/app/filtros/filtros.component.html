@@ -1,0 +1,11 @@
+<div>
+   
+    <select class="form-select" aria-label="Default select example" id="mesesSelect"  (valueChange)="seleccionarMes($event)">
+     <option selected>Selecciona un mes</option>
+      @for (mes of meses; track $index) {
+      <option  [value]="mes">{{ mes }}</option>
+      }
+    </select>
+
+  </div>
+

@@ -1,0 +1,11 @@
+
+
+
+<div class="card-container">
+    @for (item of images; track item) {
+    <div class="card">
+        <img [src]="item" alt="Image">
+      
+    </div>
+       }@empty {No existen imagenes}
+</div>
